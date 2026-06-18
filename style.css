@@ -62,7 +62,8 @@ body {
     transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     color: #2b6cb0;
 }
 
@@ -74,6 +75,25 @@ body {
     cursor: pointer;
     color: #4a5568;
     padding: 0.25rem;
+}
+
+/* ── Page header (inner pages) ── */
+.page-header {
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    color: #fff;
+    padding: 3rem 0 2.5rem;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+}
+
+.page-header p {
+    color: #bee3f8;
+    font-size: 0.95rem;
 }
 
 /* ── Hero ── */
@@ -103,10 +123,47 @@ body {
     margin-bottom: 1.25rem;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-photo-wrap {
+    flex-shrink: 0;
+}
+
+.hero-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.3);
+    display: block;
+}
+
+.hero-photo-placeholder {
+    display: none;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: 4px solid rgba(255,255,255,0.3);
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.7);
+}
+
 .hero-bio {
     font-size: 0.97rem;
     color: #e2e8f0;
-    max-width: 620px;
+    max-width: 580px;
     margin-bottom: 2rem;
     line-height: 1.85;
 }
@@ -543,6 +600,16 @@ footer a:hover {
 
     .hero {
         padding: 3.5rem 0 3rem;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .hero-photo, .hero-photo-placeholder {
+        width: 120px;
+        height: 120px;
     }
 
     .hero h1 {
