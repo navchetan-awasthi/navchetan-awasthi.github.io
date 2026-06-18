@@ -12,3 +12,12 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         }
     });
 });
+
+document.querySelectorAll('.pub-tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+        document.querySelectorAll('.pub-tab').forEach(function (t) { t.classList.remove('active'); });
+        document.querySelectorAll('.pub-section').forEach(function (s) { s.classList.add('hidden'); });
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.remove('hidden');
+    });
+});
