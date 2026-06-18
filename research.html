@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Dr. Navchetan Awasthi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">NA</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="positions.html">Positions</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Research</h1>
+            <p>Inverse problems, deep learning, and computational methods for medical imaging</p>
+        </div>
+    </div>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div class="about-content">
+                <p>
+                    Our research sits at the intersection of applied mathematics, signal processing, and deep learning,
+                    with a focus on developing computational methods that push the boundaries of medical imaging quality
+                    and accessibility. We work on inverse problems where the goal is to recover high-fidelity images
+                    from limited, noisy, or otherwise degraded measurements.
+                </p>
+                <p>
+                    A core theme across our work is making advanced imaging more practical: reducing the data and
+                    hardware requirements, improving reconstruction speed, and enabling new clinical applications in
+                    ultrasound, photoacoustic, and cardiovascular imaging.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Research Themes</h2>
+            <div class="research-grid">
+
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-wave-square"></i></div>
+                    <h3>Photoacoustic Imaging</h3>
+                    <p>
+                        Developing deep learning-based reconstruction methods for photoacoustic tomography under
+                        limited-data and noisy conditions. Work includes sinogram super-resolution, dimensionality
+                        reduction with plug-and-play priors, denoising diffusion models, and image quality assessment.
+                    </p>
+                    <div class="tags" style="margin-top:0.75rem;">
+                        <span class="tag">Image Reconstruction</span>
+                        <span class="tag">Super-Resolution</span>
+                        <span class="tag">Diffusion Models</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Ultrasound &amp; Cardiac Imaging</h3>
+                    <p>
+                        Deep learning for echocardiographic image analysis including left ventricle segmentation (LVNet),
+                        bandwidth enhancement, beamforming, and automated segmentation of aortic aneurysms in
+                        3D time-resolved ultrasound.
+                    </p>
+                    <div class="tags" style="margin-top:0.75rem;">
+                        <span class="tag">Segmentation</span>
+                        <span class="tag">Echocardiography</span>
+                        <span class="tag">3D Ultrasound</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Medical Image Segmentation</h3>
+                    <p>
+                        Designing efficient deep learning architectures for multi-organ and multi-modal segmentation,
+                        including brain tumor segmentation (MTAU), breast ultrasound, and cardiac structure
+                        delineation using transformers.
+                    </p>
+                    <div class="tags" style="margin-top:0.75rem;">
+                        <span class="tag">U-Net</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Multi-modal</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Federated &amp; Privacy-Aware Learning</h3>
+                    <p>
+                        Investigating robustness and security of federated learning in medical settings, including
+                        minimal data poisoning attacks on distributed medical image classification systems.
+                    </p>
+                    <div class="tags" style="margin-top:0.75rem;">
+                        <span class="tag">Federated Learning</span>
+                        <span class="tag">Adversarial Robustness</span>
+                        <span class="tag">Security</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Cardiovascular Signal Processing</h3>
+                    <p>
+                        Deep learning methods for ECG classification, cardiac rhythm analysis, respiratory distress
+                        quantification, and smartphone-based estimation of physiological parameters for remote monitoring.
+                    </p>
+                    <div class="tags" style="margin-top:0.75rem;">
+                        <span class="tag">ECG Analysis</span>
+                        <span class="tag">Remote Monitoring</span>
+                        <span class="tag">1D-CNN</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Computational Pathology</h3>
+                    <p>
+                        Image-guided filtering for histopathology microscopy, whole slide imaging augmented by
+                        computational methods, and tumor cellularity assessment in breast cancer histology images.
+                    </p>
+                    <div class="tags" style="margin-top:0.75rem;">
+                        <span class="tag">Histopathology</span>
+                        <span class="tag">Whole Slide Imaging</span>
+                        <span class="tag">Tumor Assessment</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Collaborators</h2>
+            <div class="collab-grid">
+
+                <div class="collab-item">
+                    <h4>Prof. Phaneendra Yalavarthy</h4>
+                    <p>Indian Institute of Science, Bangalore</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Prof. Manojit Pramanik</h4>
+                    <p>Iowa State University</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Prof. Josien Pluim</h4>
+                    <p>Eindhoven University of Technology / UMC Utrecht</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Prof. Richard Lopata</h4>
+                    <p>Eindhoven University of Technology</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Dr. Francis Kalloor Joseph</h4>
+                    <p>Erasmus MC, Biomedical Engineering</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Prof. Sandeep Kumar Kalva</h4>
+                    <p>Indian Institute of Technology Bombay</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Prof. Linga Reddy Cenkeramaddi</h4>
+                    <p>University of Agder, Norway</p>
+                </div>
+                <div class="collab-item">
+                    <h4>Dr. Nastaran Mohammadian Rad</h4>
+                    <p>Tilburg University</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Navchetan Awasthi 2019&ndash;2030 &nbsp;&middot;&nbsp; <a href="https://navchetan-awasthi.github.io">navchetan-awasthi.github.io</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
