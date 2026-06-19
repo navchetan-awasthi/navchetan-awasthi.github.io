@@ -663,6 +663,10 @@ body {
 }
 
 .placeholder-card {
+<<<<<<< HEAD
+=======
+    opacity: 1;
+>>>>>>> f7837cabf7563c37d65b3dfecb92f0803a7d6af5
     border-style: dashed;
 }
 
