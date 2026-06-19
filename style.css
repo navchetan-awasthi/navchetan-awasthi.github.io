@@ -640,6 +640,29 @@ body {
     line-height: 1.65;
 }
 
+.course-code {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #2b6cb0;
+    background: #ebf8ff;
+    border: 1px solid #bee3f8;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.course-period {
+    font-size: 0.82rem;
+    color: #718096;
+    margin-top: 0.35rem;
+}
+
+.course-period i {
+    margin-right: 0.3rem;
+    color: #a0aec0;
+}
+
 /* ── Team ── */
 .team-grid {
     display: grid;
