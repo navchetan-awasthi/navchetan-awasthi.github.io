@@ -731,6 +731,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     color: #1a365d;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.4rem;
     border-bottom: 2px solid #e2e8f0;
@@ -738,36 +739,49 @@ body {
 
 .student-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     font-size: 0.88rem;
+    margin-bottom: 0.5rem;
 }
 
 .student-table th {
     text-align: left;
-    padding: 0.6rem 1rem;
-    font-size: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.72rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: #718096;
     background: #f7fafc;
     border-bottom: 2px solid #e2e8f0;
 }
 
+.student-table th:first-child { border-radius: 8px 0 0 0; }
+.student-table th:last-child  { border-radius: 0 8px 0 0; }
+
 .student-table td {
-    padding: 0.55rem 1rem;
+    padding: 0.7rem 1.25rem;
     color: #2d3748;
     border-bottom: 1px solid #f0f4f8;
 }
 
-.student-table tbody tr:hover {
+.student-table tbody tr:last-child td { border-bottom: none; }
+
+.student-table tbody tr:hover td {
     background: #f7fafc;
+}
+
+.student-table td:first-child {
+    font-weight: 500;
 }
 
 .student-table td:nth-child(2) {
     color: #718096;
     font-size: 0.82rem;
     white-space: nowrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .student-table td:nth-child(3) {
