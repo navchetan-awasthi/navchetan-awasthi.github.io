@@ -1,2 +1,2 @@
-# navchetanawasthi.github.io
+# navchetan-awasthi.github.io
 Personal website
